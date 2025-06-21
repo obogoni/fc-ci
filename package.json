@@ -1,0 +1,28 @@
+{
+  "type": "module",
+  "name": "fc-ci",
+  "version": "1.0.0",
+  "main": "src/queue.js",
+  "scripts": {
+    "test": "node --test src/queue.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obogoni/fc-ci.git"
+  },
+  "author": "obogoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obogoni/fc-ci/issues"
+  },
+  "homepage": "https://github.com/obogoni/fc-ci#readme",
+  "description": "",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
