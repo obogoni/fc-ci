@@ -1,0 +1,12 @@
+name: ci-node-workflow
+on: [push]
+jobs:
+  check-application:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '23.9.0'
+        run: npm ci
+        run: npm test
