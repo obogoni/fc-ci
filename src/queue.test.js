@@ -11,7 +11,7 @@ describe('Queue', () => {
   });
 
   it('should initialize an empty queue', () => {
-    assert.strictEqual(queue.peek(), undefined);
+    assert.strictEqual(queue.peek(), null);
     assert.deepStrictEqual(queue.toArray(), []);
   });
 
