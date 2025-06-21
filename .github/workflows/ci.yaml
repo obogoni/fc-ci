@@ -10,3 +10,7 @@ jobs:
           node-version: '23.9.0'
       - run: npm ci
       - run: npm test
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
